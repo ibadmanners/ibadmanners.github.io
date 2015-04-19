@@ -14,4 +14,15 @@ $(document).ready(function() {
 		window.open(href, "share", windowFeatures(550, 300)); 
 	});
 
+	// Detect Google Chrome
+	var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+	if (is_chrome) {
+	    $(".chrome-overlay").show();
+	}
+
+	$(".chrome-overlay button").click(function(e) {
+		e.preventDefault();
+		$(".chrome-overlay").hide();
+	});
+
 });
