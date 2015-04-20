@@ -144,11 +144,8 @@ h1 {
 }
 
 header {
-    padding: 40px 10px 45px 10px;
     position: relative;
-}
-
-.content {
+    padding: 40px 10px 45px 10px;
 }
 
 .share ul {
@@ -198,8 +195,12 @@ header {
     margin-right: 3px;
 }
 
+.content, .controlls, #disqus_thread {
+    padding: 10px;
+}
+
 footer {
-    padding: 20px 0 40px 0;
+    padding: 20px 10px 40px 10px;
 }
 
 .chrome-overlay {
@@ -228,6 +229,12 @@ footer {
 /* ==========================================================================
    Media queries
    ========================================================================== */
+
+@media (max-width: 500px) {
+    .controlls img {
+        width: 100%;
+    }
+}
 
 /* 900px */
 @media (min-width: 900px) {
